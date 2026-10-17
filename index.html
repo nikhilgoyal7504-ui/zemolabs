@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZemoLabs — Games Crafted with Precision</title>
+  <meta name="description" content="Discover mobile games, physics puzzles, and idle simulations developed by ZemoLabs. Engineered with Unity 6 for peak performance and player delight.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/company_logo.png">
+</head>
+<body>
+  <!-- Navigation Header (Apple Style) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-link">
+        <img src="assets/company_logo.png" alt="ZemoLabs" class="brand-logo" onerror="this.src='assets/animal_blast_logo.png'">
+        <span class="brand-name">ZemoLabs</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#games" class="nav-item">Games</a>
+        <a href="#philosophy" class="nav-item">Engineering</a>
+        <a href="#about" class="nav-item">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Apple Minimalism) -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-eyebrow">ZemoLabs Portfolio</div>
+        <h1 class="hero-title">Games crafted with precision.</h1>
+        <p class="hero-subtitle">
+          A collection of mobile puzzles, physics engines, and casual simulations engineered for fluid 60&nbsp;FPS performance and tactile player delight.
+        </p>
+        <div class="hero-cta-wrap">
+          <a href="#games" class="btn btn-primary">Explore Portfolio</a>
+          <a href="#philosophy" class="btn btn-secondary">Our Approach</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Bar -->
+    <section class="highlights-section">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <span class="highlight-number">12</span>
+            <span class="highlight-label">Titles & Prototypes</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">50+</span>
+            <span class="highlight-label">Authored Hindrances</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">60 FPS</span>
+            <span class="highlight-label">Locked Performance</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">0 B</span>
+            <span class="highlight-label">Core Loop Allocation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Portfolio Section -->
+    <section class="section games-section" id="games">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Games & Apps</h2>
+          <p class="section-description">
+            Explore our titles spanning casual blast puzzles, deductive logic, physics drops, and empire management.
+          </p>
+        </div>
+
+        <!-- Controls: Apple Segmented Pill & Search -->
+        <div class="catalog-toolbar">
+          <div class="segmented-control" id="category-tabs">
+            <button class="segment-btn active" data-category="all">All</button>
+            <button class="segment-btn" data-category="puzzle">Puzzle & Blast</button>
+            <button class="segment-btn" data-category="idle">Idle & Tycoon</button>
+            <button class="segment-btn" data-category="action">Action & Physics</button>
+            <button class="segment-btn" data-category="strategy">Strategy & Board</button>
+          </div>
+
+          <div class="search-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="game-search" placeholder="Search titles..." autocomplete="off">
+          </div>
+        </div>
+
+        <!-- Games Grid (Injected by app.js) -->
+        <div class="games-grid" id="games-grid">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Philosophy Section (Apple Feature Grid) -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Designed for performance.</h2>
+          <p class="section-description">
+            Under the hood, every title is constructed to meet rigorous architectural standards for memory and responsiveness.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-icon">⚡</div>
+            <h3>Zero-Allocation Core</h3>
+            <p>
+              Match detectors, physics solvers, and obstacle managers operate strictly without dynamic heap allocations during gameplay to eliminate Garbage Collection stutters.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">✨</div>
+            <h3>Tactile Feedback</h3>
+            <p>
+              Every interaction is tuned with multi-frequency camera micro-trauma, precise frame delays, and pitch-ascended acoustic feedback to ensure gameplay feels alive.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">📦</div>
+            <h3>Modular Architecture</h3>
+            <p>
+              ScriptableObject pipelines allow rapid iteration of levels, hindrances, and event balance without touching core runtime loops or introducing regressions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <span class="about-label">About ZemoLabs</span>
+          <h2 class="about-title">Crafting thoughtful mobile play.</h2>
+          <p class="about-text">
+            ZemoLabs focuses on developing delightful, high-retention mobile experiences. From casual match-2 puzzles to physics-based arcade drops, our portfolio combines polished art direction with uncompromising engineering.
+          </p>
+          <div class="about-specs">
+            <div class="spec-item">
+              <span class="spec-label">Engine</span>
+              <span class="spec-value">Unity 6 & Universal Render Pipeline</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Platforms</span>
+              <span class="spec-value">iOS, iPadOS, Android, Windows</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Focus</span>
+              <span class="spec-value">Puzzle, Physics, Tycoon & Strategy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Game Details Modal (Apple Sheet Style) -->
+  <div class="modal-overlay" id="game-modal" aria-hidden="true" role="dialog">
+    <div class="modal-sheet">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (Apple Style Minimal) -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/company_logo.png" alt="ZemoLabs" class="footer-logo" onerror="this.src='assets/animal_blast_logo.png'">
+          <span class="footer-name">ZemoLabs</span>
+        </div>
+        <p class="footer-tagline">
+          Engineering joyful, high-performance mobile gaming experiences.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 ZemoLabs. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#games">Games</a>
+          <a href="#philosophy">Engineering</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
